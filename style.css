@@ -657,6 +657,10 @@ form button:hover {
     align-items: center;
     gap: 20px;
   }
+  .service{
+    width:100%;
+    margin: 2px;
+  }
 .category{
   display: inline-block;
   width: 90%;
@@ -835,3 +839,4 @@ footer {
   padding-top: 15px;
   font-size: 0.9rem;
 }
+
