@@ -1,336 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MYPORTFOLIO</title>
-    <link rel="stylesheet" href="style.css" />
-    <!--remix icon-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
-    />
-    <!--swiper slider-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
-    />
-  </head>
-  <body>
-    <!--header and nav section-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GechMan – Web Designer & Digital Creator</title>
+  <!-- You can add your own CSS link here later -->
+  <link rel="stylesheet" href="style.css"> 
+</head>
 
-    <header id="home">
-      <nav>
-        <button id="menu-toggle">☰</button>
-        <img src="images/mylogo.jpg" alt="" />
-        <div class="Logo"><a href="#">GechMan</a></div>
-        <ul class="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="welcome">
-        <h2>Web Designer</h2>
-        <h1>Hello my name is GechMan.<br />i'm <span id="text"></span></h1>
+<body>
+
+  <!-- Header / Hero -->
+  <header>
+    <nav aria-label="Main navigation">
+      <div class="logo-container">
+        <a href="#home">GechMan</a>
+      </div>
+
+      <button type="button" aria-label="Toggle menu" aria-expanded="false">
+        Menu
+      </button>
+
+      <ul role="menubar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-content">
+        <p class="role">Web Designer & Digital Creator</p>
+        <h1>Hello, I'm GechMan</h1>
+        <h2>I build <span>modern digital experiences</span></h2>
         <p>
-          I'm an undergraduate Computer Science student <br />
-          at Wachemo University,passionate about building <br />
-          web page.
+          Computer Science student at Wachemo University<br>
+          Passionate about web development, UI/UX, graphics & visual storytelling
         </p>
-        <button>Aboute Me</button>
+        <a href="#about">Learn More About Me</a>
       </div>
-    </header>
-    <!--ABOUT SECTION-->
-    <section class="about" id="about">
-      <div class="about_top">
-        <div class="about_image">
-          <img src="images/gechman.png" alt="Gechman's picture" class="image" />
-          <!-- <img src="images/gech13.png" alt="" class="about_small" />-->
-        </div>
-        <div class="about_content">
-          <h1>About Me</h1>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- About Section -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+
+      <div class="about-layout">
+        <figure class="about-photo">
+          <img src="images/gechman.png" alt="Getachew Mengistu (GechMan)">
+        </figure>
+
+        <div class="about-text">
+          <h3>Hi, I'm Getachew Mengistu — GechMan</h3>
           <p>
-            Hi, I'm Getachew Mengistu Hasiso — but you can call me GechMan. I'm
-            an undergraduate Computer Science student at Wachemo
-            University,passionate about building creative digital experiences
-            that reflect identity, solve real-world problems, and welcome people
-            from all backgrounds.
+            I'm an undergraduate Computer Science student at Wachemo University
+            with a strong passion for creating clean, functional and inclusive digital products.
           </p>
-
-          
-    <!--<h2 class="subtitle-2">🎯 My Mission</h2>
-<p>
-I believe in the power of design and 
-code to tell stories, connect communities,
- and make technology feel human. Whether it's 
- crafting a modern portfolio, designing
-  intuitive interfaces, or sharing resources
-   in Amharic and English, I aim to make my 
-   work inclusive, expressive, and impactful.</p>
-<h2 class="subtitle-3">🚀 What I'm Working On</h2>
-<p>
-• 	Building a bilingual, interactive personal 
-website that serves as my online home
-• 	Refining the “Gech DEVELOPER” brand
- to reflect creativity and professionalism
-• 	Developing a fully functional
- registration page with backend connectivity
-• 	Exploring full-stack workflows and 
-expanding my technical toolkit.In addition 
-i can make variouse Graphics products like
- Logo design,Businnes card and Video editing
-  to realize my theorotical knoweldge
-</p>
-<h2 class="subtitle-4">🌱 My Values</h2>
-<p>
-• 	Clarity and creativity in every project
-• 	Persistence through technical challenges
-• 	Openness to feedback, collaboration, and growth
-• 	A welcoming digital presence that 
-feels authentic and accessible</p>
-<h2 class="subtitle-5">💡 A Little More About Me</h2>
-<p>
-I thrive on solving problems, experimenting
- with UI/UX, web programing,Graphics design,
- Video editing and learning through hands-on 
- creation. My journey is just beginning, but
-  every line of code and design choice is a 
-  step toward building something meaningful —
-   for myself and for others.</p>
-             </div>
-       Services Section -->
-    <!--<!<div id="services">
-  <div class="container">
-    <h1 class="subtitle" ">My Services</h1>
-    <div class="row">
-      <div class="service-col">
-        <h3>Web Design</h3>
-        <p>I design responsive and modern websites using HTML, CSS, and JavaScript.</p>
-      </div>
-      <div class="service-col">
-        <h3>UI/UX Design</h3>
-        <p>I create user-friendly interfaces and experiences for web applications.</p>
-      </div>
-      <div class="service-col">
-        <h3>Video Editing</h3>
-        <p>I edit videos for personal and professional use using various tools.</p>
-      </div>
-      <div class="service-col">
-        <h3>Graphics Design</h3>
-        <p>I design responsive and modern Graphics products like Busines Card,Logo Design...etc using various tools</p>
-      </div>
-    </div>
-  </div>
-</div>-->
-
-          <button class="skill_btn">Show My Skill</button>
-        </div>
-      </div>
-      <div class="about_bottom">
-        <div class="skill_box">
-          <h2>Design</h2>
-          <div class="percent"></div>
-        </div>
-        <div class="skill_box">
-          <h2>Devlopment</h2>
-          <div class="percent"></div>
-        </div>
-        <div class="skill_box">
-          <h2>Editing</h2>
-          <div class="percent"></div>
-        </div>
-        <div class="skill_box">
-          <h2>3D Graphics</h2>
-          <div class="percent"></div>
-        </div>
-        <div class="skill_box">
-          <h2>Photography</h2>
-          <div class="percent"></div>
-        </div>
-        <div class="skill_box">
-          <h2>Writing</h2>
-          <div class="percent"></div>
-        </div>
-      </div>
-    </section>
-    <!--SERVICE SECTION-->
-    <section class="services" id="services">
-      <div class="headings">
-        <h1>My Services</h1>
-        <p>I provide the following services</p>
-      </div>
-
-      <div class="services_cards">
-        <!--card1-->
-        <div class="service_card">
-          <i class="ri-macbook-line"></i>
-          <div class="service_card_det">
-            <h2>Website Design</h2>
-            <p>
-              I design responsive, user-friendly websites that combine clean
-              layouts with modern aesthetics, ensuring a smooth experience
-              across all devices.
-            </p>
-          </div>
-        </div>
-
-        <!--card2-->
-        <div class="service_card">
-          <i class="ri-edit-box-line"></i>
-          <div class="service_card_det">
-            <h2>Visual Editor</h2>
-            <p>
-              I create visually engaging content using professional editing
-              tools to enhance clarity, creativity, and overall presentation
-              quality.
-            </p>
-          </div>
-        </div>
-
-        <!--card3-->
-        <div class="service_card">
-          <i class="ri-palette-line"></i>
-          <div class="service_card_det">
-            <h2>Graphics Design</h2>
-            <p>
-              I design eye-catching graphics that communicate ideas effectively,
-              strengthen brand identity, and leave a lasting visual impression.
-            </p>
-          </div>
-        </div>
-
-        <!--card4-->
-        <div class="service_card">
-          <i class="ri-layout-line"></i>
-          <div class="service_card_det">
-            <h2>UI/UX Design</h2>
-            <p>
-              I craft intuitive and visually appealing interfaces focused on
-              user experience, usability, and seamless interaction across
-              platforms.
-            </p>
-          </div>
-        </div>
-
-        <!--card5-->
-        <div class="service_card">
-          <i class="ri-box-3-line "></i>
-          <div class="service_card_det">
-            <h2>3D design</h2>
-            <p>
-              I develop realistic and creative 3D designs that bring concepts to
-              life through detailed modeling, depth, and visual accuracy.
-            </p>
-          </div>
-        </div>
-
-        <!--card6-->
-        <div class="service_card">
-          <i class="ri-camera-line"></i>
-          <div class="service_card_det">
-            <h2>Photography</h2>
-            <p>
-              I capture high-quality photographs that tell compelling stories,
-              highlight details, and enhance visual communication.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--mini hire section-->
-    <section class="hireMe">
-      <h1>I am Available For Freelancer</h1>
-      <button>Hire Me</button>
-    </section>
-    <!--Portifolio section-->
-    <section class="portfolio">
-      <div class="heading">
-        <h2>Portfolio</h2>
-        <h1>I Love What I Do</h1>
-      </div>
-
-      <div class="category">
-        <a href="#">All projects</a>
-       <a href="https://github.com/gechdigital/repository-name" target="_blank" rel="noopener noreferrer">
-  Website
-</a>
-
-        <a href="#">UI/UX Design</a>
-        <a href="https://www.youtube.com/@blessedhope7000" target="_blank">
-  Video Editing
-</a>
-
-        <a href="#">Graphics Design</a>
-        <a href="#">3D Design</a>
-      </div>
-      <div class="portfolio_images" id="portfolio">
-        <div class="portfolio_img portfolio1">
-          <img src="images/webdesign.png" alt="myprojects" />
-        </div>
-        <div class="portfolio_img portfolio2">
-          <img src="images/myimage.png" alt="myprojects" />
-        </div>
-        <div class="portfolio_img portfolio3">
-          <img src="images/visualeditor.png" alt="myprojects" />
-        </div>
-        <div class="portfolio_img portfolio4">
-          <img src="images/webdev_img1.jpg" alt="myprojects" />
-        </div>
-        <div class="portfolio_img portfolio5">
-          <img src="images/myui.png" alt="myprojects" />
-        </div>
-        
-        <div class="portfolio_img portfolio6">
-          <img src="images/visualeditor2.png" alt="myprojects" />
+          <p>
+            I enjoy turning ideas into reality through code, thoughtful design
+            and meaningful user experiences — whether it's websites, user interfaces,
+            branding materials, video edits or 3D visualizations.
+          </p>
+          <p>
+            My goal is to create work that feels human, looks professional
+            and solves real problems — while continuously learning and exploring.
+          </p>
         </div>
       </div>
     </section>
 
 
- 
- <!--Contact Section-->
-    <div id="contact">
-      <div class="container">
-        <h2 class="subtitle">Contact Me</h2>
-        <p>Hav a project or idea? Let's connect!</p>
-        <form>
-          <input type="text" placeholder="Your Full Name" required />
-          <input type="number" placeholder="Your Phone Number " required />
-          <input type="email" placeholder="Your Email" required />
-          <input type="text" placeholder="Address" required />
-          <input type="text" placeholder="Subject" required />
-          <textarea rows="6" placeholder="Your Message"></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+    <!-- Services Section -->
+    <section id="services" aria-labelledby="services-heading">
+      <h2 id="services-heading">My Services</h2>
+      <p class="section-intro">I help bring ideas to life through digital design and development</p>
+
+      <div class="services-list">
+        <article>
+          <h3>Website Design & Development</h3>
+          <p>Responsive, modern websites built with clean code — fast, accessible, mobile-first.</p>
+        </article>
+
+        <article>
+          <h3>UI/UX Design</h3>
+          <p>User-centered interfaces focused on usability, clarity and delightful experiences.</p>
+        </article>
+
+        <article>
+          <h3>Graphics Design</h3>
+          <p>Logos, business cards, social media assets, posters — strong visual identity.</p>
+        </article>
+
+        <article>
+          <h3>Video Editing</h3>
+          <p>Storytelling through cuts, transitions, color grading and motion graphics.</p>
+        </article>
+
+        <article>
+          <h3>3D Design & Visualization</h3>
+          <p>Realistic models, product renders, architectural visualization.</p>
+        </article>
+
+        <article>
+          <h3>Photography</h3>
+          <p>High-quality photos — portraits, products, events, creative concepts.</p>
+        </article>
       </div>
-    </div>
-    <h2 style="margin: 20px; padding: 20px;">Hav you need the cv?</h2>
-     <a href="mycv.docx.pdf" download class="cv-btn">Download CV</a>
-    <!--typed js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
-    <!--swiper slider js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    </section>
 
-    <!--javascript-->
-    <script src="script.js"></script>
-  </body>
 
-  <!-- Footer Section -->
+    <!-- Hire / Call to Action -->
+    <section aria-label="Hire me call to action">
+      <h2>Available for Freelance Work</h2>
+      <p>Let's create something meaningful together</p>
+      <a href="#contact">Get in Touch</a>
+    </section>
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" aria-labelledby="portfolio-heading">
+      <h2 id="portfolio-heading">Portfolio</h2>
+      <p>Selected works — things I'm proud of</p>
+
+      <div class="portfolio-grid">
+        <figure>
+          <img src="images/webdesign.png" alt="Website design project">
+          <figcaption>Website Design</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/myimage.png" alt="Personal branding visual">
+          <figcaption>Personal Branding</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/visualeditor.png" alt="Video editing sample">
+          <figcaption>Video Editing</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/webdev_img1.jpg" alt="Web development showcase">
+          <figcaption>Web Development</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/myui.png" alt="UI/UX design example">
+          <figcaption>UI/UX Design</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/visualeditor2.png" alt="Another video editing project">
+          <figcaption>Video Editing Project</figcaption>
+        </figure>
+      </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Get in Touch</h2>
+      <p>Have a project or idea? I'd love to hear from you.</p>
+
+      <form>
+        <div>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="cv-area">
+        <h3>Need my CV?</h3>
+        <a href="mycv.docx.pdf" download>Download CV</a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
   <footer>
-    <div class="footer-container">
-      <!-- Contact Info -->
-      <div class="footer-contact">
-        <h2>Contact Me</h2>
-        <p>📞 +251952714143 / +251777302692</p>
-        <p>📧 getachewmengistu08@gmail.com</p>
+    <div class="footer-columns">
+      <div>
+        <h3>Contact</h3>
+        <address>
+          <p>Phone: +251 952 714 143<br>+251 777 302 692</p>
+          <p>Email: <a href="mailto:getachewmengistu08@gmail.com">getachewmengistu08@gmail.com</a></p>
+        </address>
       </div>
 
-      <!-- Navigation Links -->
-      <div class="footer-nav">
-        <h2>Quick Links</h2>
+      <div>
+        <h3>Quick Links</h3>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -340,29 +227,21 @@ I thrive on solving problems, experimenting
         </ul>
       </div>
 
-      <!-- Social Media Links -->
-      <div class="footer-social">
-        <h2>Follow Me</h2>
-        <div class="social-icons">
-          <a href="https://facebook.com/gechman01" target="_blank"
-            ><i class="ri-facebook-fill"></i
-          ></a>
-          <a href="https://t.me/@gechsoon" target="_blank"
-            ><i class="ri-telegram-fill"></i
-          ></a>
-          <a href="https://youtube.com/@gechdigital" target="_blank"
-            ><i class="ri-youtube-fill"></i
-          ></a>
-          <a href="https://twitter.com/@GechIms81683" target="_blank"
-            ><i class="ri-twitter-fill"></i
-          ></a>
-        </div>
+      <div>
+        <h3>Follow Me</h3>
+        <ul class="social-links">
+          <li><a href="https://facebook.com/gechman01" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://t.me/@gechsoon" target="_blank" rel="noopener">Telegram</a></li>
+          <li><a href="https://youtube.com/@gechdigital" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://twitter.com/@GechIms81683" target="_blank" rel="noopener">Twitter</a></li>
+        </ul>
       </div>
     </div>
 
-    <!-- Copyright -->
-    <div class="footer-bottom">
-      <p>&copy; 2025 GechMan | All Rights Reserved</p>
+    <div class="copyright">
+      <p>© 2025 GechMan – All Rights Reserved</p>
     </div>
   </footer>
+
+</body>
 </html>
